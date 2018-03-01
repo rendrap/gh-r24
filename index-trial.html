@@ -1,0 +1,238 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+    /* Font Awesome */
+    @font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.eot?v=4.0.3');
+    src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+    .font-awesome-missing .doc_header_social {
+    display:none;
+    }
+    .fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+    .fa-facebook:before {
+    content: "\f09a";
+    }
+    .fa-twitter:before {
+    content: "\f099";
+    }
+    .fa-google-plus:before {
+    content: "\f0d5";
+    }
+    .fa-linkedin:before {
+    content: "\f0e1";
+    }
+    .fa-instagram:before {
+    content: "\f16d";
+    }
+    .fa-dribbble:before {
+    content: "\f17d";
+    }
+    .fa-skype:before {
+    content: "\f17e";
+    }
+
+
+
+     /* general styling */
+
+     body {
+      font-family: Inconsolata, monospace;
+      font-size: 1rem;
+      line-height: 2;
+       background-color: #c0a890;
+      color: #e4d7d1;
+       text-align: center;
+     }
+     h2 {
+       margin-top: 0;
+       margin-bottom: 3rem;
+     }
+     .standard_width {
+      width: 100%;
+      max-width: 75rem;
+      margin-left: auto;
+      margin-right: auto;
+     }
+     .doc_header_inner {
+       border: 1rem solid rgba(255, 255, 255, 0.5);
+       background-color: #242320;
+       background-clip: padding-box;
+      padding-top: 4rem;
+      padding-bottom: 2.5rem;
+      text-align: center;
+     }
+     h1.doc_header_title {
+      font: normal 5.625rem/1.1em 'Noto Sans', serif;
+      color: #e4d7d1;
+      letter-spacing: -0.125rem;
+      margin: 0 auto 1rem auto;
+      text-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, .8);
+     }
+     p.doc_header_text {
+      line-height: 1.9;
+      color: #C2B6B2;
+      margin: 0 auto;
+      width: 70%;
+      text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, .5);
+     }
+     .doc_header_text span,
+     .doc_header_text a {
+      color: #BA7557;
+     }
+     .doc_header_inner hr {
+      width: 60%;
+      margin: 1.125rem auto 1.5rem auto;
+      border-color: #2F2D2E;
+      border-color: rgba(150, 150, 150, .1);
+      }
+     .doc_header_social {
+      margin: 1.5rem 0;
+      padding: 0;
+      font-size: 1.875rem;
+      text-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, .8);
+     }
+     .doc_header_social li {
+      display: inline-block;
+      margin: 0 1rem;
+      padding: 0;
+     }
+     .doc_header_social li a {
+      color: #BA7557;
+     }
+     .doc_header_social li a:hover {
+      color: #d77144;
+     }
+
+     .video_wrap {
+      background-color: #242320;
+       border-top: 0.25rem solid rgba(0,0,0,0.2);
+       border-bottom: 0.25rem solid rgba(0,0,0,0.2);
+     }
+
+     .iframe_wrap {
+       color: #2b2723;
+     }
+
+     .portfolio_wrap {
+      background-color: #f5f1ef;
+       color: #372f28;
+     }
+
+     .portfolio_inner {
+      padding: 4rem 6rem;
+     }
+
+     .portfolio_item {
+      box-sizing: border-box;
+      float: left;
+      width: 25%;
+      text-align: center;
+      padding: 0.8rem;
+     }
+
+     .twitter_carousel_wrap {
+      background-color: #242320;
+      text-align: center;
+     }
+
+     .clearfix:before,
+     .clearfix:after {
+      content: " ";
+      display: table;
+     }
+
+     .clearfix:after {
+      clear: both;
+     }
+
+     @media (max-width: 60rem){
+      .portfolio_inner {
+        padding: 4rem 2rem;
+      }
+     }
+
+     @media (max-width: 45rem){
+      .portfolio_item {
+        width: 50%;
+      }
+     }
+
+     @media (max-width: 35rem){
+      h1.doc_header_title {
+        font-size: 12vw;
+      }
+     }
+
+     .doc_header {
+      height: 100vh;
+      background-color: #000;
+      position: relative;
+      overflow: hidden;
+     }
+
+     .doc_header_bg {
+      min-height: 100vh;
+     }
+
+     .doc_header_inner {
+      position: absolute;
+      width: 85%;
+      max-width: 64rem;
+      top: 50%;
+      left: 50%;
+      transform:  translate(-50%, -50%);
+     }
+
+    </style>
+  </head>
+  <body>
+      <div class="doc_header">
+        <amp-img src="car.jpg" width="800" height="600" layout="responsive" class="doc_header_bg"></amp-img>
+        <div class="doc_header_inner">
+          <h1 class="doc_header_title">AMP Cover Image</h1>
+          <p class="doc_header_text"></p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique at repellat omnis, mollitia quibusdam error <a href="https://ampproject.org">AMP Project</a> perferendis perspiciatis, nemo hic, ut ipsum voluptatem neque aspernatur soluta ex nesciunt tempore ipsam. Veritatis repudiandae dolorem, dolore ad ipsa! Consequuntur aliquam dicta, recusandae distinctio.
+          <hr>
+          <ul class="doc_header_social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa linkeding"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribble"></i></a></li>
+            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+          </ul>
+        </div>
+      </div>
+  </body>
+</html>
