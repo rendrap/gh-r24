@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <link rel="canonical" href="/gh-r24/vergleich/">
+  <link rel="canonical" href="/vergleich/">
   
   <meta name="robots" content="index, follow" />
 
@@ -44,7 +44,7 @@
       <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
   <![-- endif] -->
 
-  <link rel="alternate" type="application/rss+xml" title="r24" href="/gh-r24/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="r24" href="/feed.xml" />
 
   <style amp-custom>
     /* base-min.css */
@@ -213,9 +213,6 @@ table {
   word-spacing: normal;
   vertical-align: top;
   text-rendering: auto; }
-
-.pure-g [class*=pure-u] {
-  font-family: sans-serif; }
 
 .pure-u-1-24 {
   width: 4.1667%; }
@@ -652,11 +649,17 @@ table td {
 table tr:nth-child(2n-1) td {
   background-color: #f2f2f2; }
 
+.pure-g {
+  font: 300 1rem/1.8 'Lato', sans-serif; }
+
+html {
+  font: 300 1rem/1.8 'Lato', sans-serif; }
+
 body {
   /*font: normal 1em/1.6em Arial, sans-serif;*/
-  font: normal 1em/2em  -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  color: #333;
+  font: 300 1rem/1.8 'Lato', sans-serif;
   margin: 0;
+  color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -679,10 +682,11 @@ html, button, input, select, textarea,
 
 .wrapper {
   margin: 0 auto;
-  max-width: 67.5em; }
+  max-width: 75em;
+  box-sizing: border-box; }
 
 .content-wrapper {
-  margin: 1em auto;
+  padding: 0 0.9375rem;
   background: #fff; }
 
 .sidebar-wrapper {
@@ -692,9 +696,36 @@ html, button, input, select, textarea,
   margin: 0 auto;
   max-width: 75em; }
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 40.01em) {
+  article p {
+    margin-left: 10rem;
+    margin-right: 10rem; }
+  article h2, article h3, article h4 {
+    margin: 1rem 10rem .5rem 10rem; }
+  article img {
+    max-width: 1000px;
+    /*margin-left: -5rem;*/
+    /*margin-right: -5rem;*/ }
+  article p {
+    text-align: justify; }
+  article ul {
+    margin: 1rem 10rem 2rem 10rem;
+    list-style: none;
+    padding: 0; }
+  article ul li {
+    /*font-size: .95rem;*/
+    padding-left: 4rem; }
+  article ul li:before {
+    font-family: FontAwesome;
+    content: '\f101';
+    display: inline-block;
+    color: #333;
+    margin-left: -2.5rem;
+    width: 2.5rem;
+    /* same as padding-left set on li */ }
+  .margin10 {
+    margin: 1rem 10rem .5rem 10rem; }
   .content-wrapper article {
-    padding: 1.25em;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13); } }
 
 @media only screen and (max-width: 39.9375em) {
@@ -711,11 +742,51 @@ a:hover {
   text-decoration: underline;
   color: #000; }
 
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+p,
+span,
+blockquote,
+th,
+td {
+  font: 300 1rem/1.8 'Lato', sans-serif;
+  color: #000; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 0; }
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.4; }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  color: #cacaca;
+  line-height: 0; }
+
+h1 {
+  font-size: 1.700em; }
+
+/*article > h2 {margin-top: 0;}*/
+h2 {
+  font-size: 1.500em; }
+
+h3 {
+  font-size: 1.300em; }
+
+h4 {
+  font-size: 1.000em; }
+
+h5, h6 {
+  font-size: 0.875em; }
 
 @media only screen and (max-width: 39.9375em) {
   .main {
@@ -746,26 +817,6 @@ amp-user-notification.cookie-info .ampstart-btn {
   border: 1px solid #fff;
   padding: 0 .5em;
   margin: .3em 0; }
-
-@media only screen and (min-width: 40em) {
-  h1 {
-    font-size: 1.2em;
-    line-height: 1.6em; }
-  h2 {
-    font-size: 1.2em;
-    line-height: 1.6em; }
-  h2:first-child {
-    margin: 1.5em auto 1em auto; }
-  h2:nth-child(n+2):before {
-    content: "";
-    display: block;
-    background-color: #666;
-    width: 6em;
-    height: 4px;
-    margin: 1.5em auto 1em auto; }
-  .siteheader-wrapper {
-    margin: 0 auto;
-    max-width: 67.5em; } }
 
 .float-left {
   float: left; }
@@ -1444,7 +1495,7 @@ amp-selector [option][selected] {
 
                         
                         <li class="pure-menu-item pure-menu-selected">
-                            <a class="pure-menu-link" href="/gh-r24/">Home</a>
+                            <a class="pure-menu-link" href="/">Home</a>
                         </li>
                         
                     
@@ -1452,35 +1503,35 @@ amp-selector [option][selected] {
 
                         
                         <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover pure-menu-selected">
-                            <a class="pure-menu-link" href="/gh-r24/">Leistungen</a>
+                            <a class="pure-menu-link" href="/">Leistungen</a>
                             <ul class="pure-menu-children">
                                 
                                 <li class="pure-menu-item pure-menu-selected">
-                                    <a class="pure-menu-link" href="/gh-r24/Architekturfotografie/">Architekturfotografie</a>
+                                    <a class="pure-menu-link" href="/Architekturfotografie/">Architekturfotografie</a>
                                 </li>
                                 
                                 <li class="pure-menu-item pure-menu-selected">
-                                    <a class="pure-menu-link" href="/gh-r24/Businessfotografie/">Businessfotografie</a>
+                                    <a class="pure-menu-link" href="/Businessfotografie/">Businessfotografie</a>
                                 </li>
                                 
                                 <li class="pure-menu-item pure-menu-selected">
-                                    <a class="pure-menu-link" href="/gh-r24/Fashion%20Fotografie/">Fashion Fotografie</a>
+                                    <a class="pure-menu-link" href="/Fashion%20Fotografie/">Fashion Fotografie</a>
                                 </li>
                                 
                                 <li class="pure-menu-item pure-menu-selected">
-                                    <a class="pure-menu-link" href="/gh-r24/Food%20Fotografie/">Food Fotografie</a>
+                                    <a class="pure-menu-link" href="/Food%20Fotografie/">Food Fotografie</a>
                                 </li>
                                 
                                 <li class="pure-menu-item pure-menu-selected">
-                                    <a class="pure-menu-link" href="/gh-r24/Hochzeitsfotografie/">Hochzeitsfotografie</a>
+                                    <a class="pure-menu-link" href="/Hochzeitsfotografie/">Hochzeitsfotografie</a>
                                 </li>
                                 
                                 <li class="pure-menu-item pure-menu-selected">
-                                    <a class="pure-menu-link" href="/gh-r24/Portraitfotografie/">Portraitfotografie</a>
+                                    <a class="pure-menu-link" href="/Portraitfotografie/">Portraitfotografie</a>
                                 </li>
                                 
                                 <li class="pure-menu-item pure-menu-selected">
-                                    <a class="pure-menu-link" href="/gh-r24/Restaurantfotografie/">Restaurantfotografie</a>
+                                    <a class="pure-menu-link" href="/Restaurantfotografie/">Restaurantfotografie</a>
                                 </li>
                                 
                             </ul>
@@ -1495,7 +1546,7 @@ amp-selector [option][selected] {
 
                         
                         <li class="pure-menu-item pure-menu-selected">
-                            <a class="pure-menu-link" href="/gh-r24/Team/">Team</a>
+                            <a class="pure-menu-link" href="/Team/">Team</a>
                         </li>
                         
                     
@@ -1503,7 +1554,7 @@ amp-selector [option][selected] {
 
                         
                         <li class="pure-menu-item pure-menu-selected">
-                            <a class="pure-menu-link" href="/gh-r24/Kontakt/">Kontakt</a>
+                            <a class="pure-menu-link" href="/Kontakt/">Kontakt</a>
                         </li>
                         
                     
@@ -1524,7 +1575,7 @@ amp-selector [option][selected] {
 
                             
                             <li class="pure-menu-item pure-menu-selected">
-                                <a class="pure-menu-link" href="/gh-r24/">Home</a>
+                                <a class="pure-menu-link" href="/">Home</a>
                             </li>
                             
                         
@@ -1532,35 +1583,35 @@ amp-selector [option][selected] {
 
                             
                             <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover pure-menu-selected">
-                                <a class="pure-menu-link" href="/gh-r24/">Leistungen<i class="material-icons">&#xE5CF;</i></a>
+                                <a class="pure-menu-link" href="/">Leistungen<i class="material-icons">&#xE5CF;</i></a>
                                 <ul class="pure-menu-children">
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Architekturfotografie/">Architekturfotografie</a>
+                                        <a class="pure-menu-link" href="/Architekturfotografie/">Architekturfotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Businessfotografie/">Businessfotografie</a>
+                                        <a class="pure-menu-link" href="/Businessfotografie/">Businessfotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Fashion%20Fotografie/">Fashion Fotografie</a>
+                                        <a class="pure-menu-link" href="/Fashion%20Fotografie/">Fashion Fotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Food%20Fotografie/">Food Fotografie</a>
+                                        <a class="pure-menu-link" href="/Food%20Fotografie/">Food Fotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Hochzeitsfotografie/">Hochzeitsfotografie</a>
+                                        <a class="pure-menu-link" href="/Hochzeitsfotografie/">Hochzeitsfotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Portraitfotografie/">Portraitfotografie</a>
+                                        <a class="pure-menu-link" href="/Portraitfotografie/">Portraitfotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Restaurantfotografie/">Restaurantfotografie</a>
+                                        <a class="pure-menu-link" href="/Restaurantfotografie/">Restaurantfotografie</a>
                                     </li>
                                     
                                 </ul>
@@ -1571,7 +1622,7 @@ amp-selector [option][selected] {
                         <!-- Logo Top Navigation -->
                             <li class="pure-menu-item pure-menu-selected">
                                 <div class="logo">
-                                    <a class="pure-menu-link" title="zurück zur Startseite" href="/gh-r24/"></a>
+                                    <a class="pure-menu-link" title="zurück zur Startseite" href="/"></a>
                                 </div>
                             </li>
 
@@ -1582,7 +1633,7 @@ amp-selector [option][selected] {
 
                             
                             <li class="pure-menu-item pure-menu-selected">
-                                <a class="pure-menu-link" href="/gh-r24/Team/">Team</a>
+                                <a class="pure-menu-link" href="/Team/">Team</a>
                             </li>
                             
                         
@@ -1590,7 +1641,7 @@ amp-selector [option][selected] {
 
                             
                             <li class="pure-menu-item pure-menu-selected">
-                                <a class="pure-menu-link" href="/gh-r24/Kontakt/">Kontakt</a>
+                                <a class="pure-menu-link" href="/Kontakt/">Kontakt</a>
                             </li>
                             
                         
@@ -1602,7 +1653,7 @@ amp-selector [option][selected] {
             <div class="pure-g">
                 <div class="pure-u-1 logo-wrapper">
                     <a title="zurück zur Startseite" href="/">
-                        <amp-img src=/gh-r24/images/fotograf-muenchen.gif alt="Fotograf München" width="97" height="143" noloading></amp-img>
+                        <amp-img src=/images/fotograf-muenchen.gif alt="Fotograf München" width="97" height="143" noloading></amp-img>
                     </a>
 
                     <ul class="burger-icon">
@@ -1623,11 +1674,11 @@ amp-selector [option][selected] {
 
 <div class="wrapper">
     <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-16-24 pure-u-sm-24-24 content-wrapper">
+        <div class="pure-u-1 pure-u-md-24-24 pure-u-sm-24-24 content-wrapper">
 
             <article>
                 
-                <h1>Rürup-Renten Vergleich 2018</h1>
+                <h1 class="margin10">Rürup-Renten Vergleich 2018</h1>
                 
 
                 
@@ -1652,20 +1703,6 @@ amp-selector [option][selected] {
 
         </div>
 
-        <div class="pure-u-1 pure-u-md-8-24 hide-for-small-only sidebar-wrapper">
-            <div class="box-sidebar">
-                <div class="vorteilemituns">
-                    <div class="vorteilheadline">Ihre Vorteile mit uns</div>
-                    Wir unterstützen Sie bei der unabhängigen Suche mit dem kostenfreien Rürup-Vergleich.
-                    <ul>
-                        <li>kostenlose und unverbindliche Beratung</li>
-                        <li>Rendite-Unterschiede bis zu 40%</li>
-                        <li>die aktuellen Testsieger im Vergleich</li>
-                        <li>40 Gesellschaften mit über 100 Tarifen im Vergleich</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 
     
@@ -1675,11 +1712,11 @@ amp-selector [option][selected] {
             <div class="share-box share-box-content">
                 <div class="share-box-heading">Share this:</div>
                 <div class="share-box-button">
-                    <a class="f" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=/gh-r24/vergleich/" ><svg class="icon"><use xlink:href="#facebook" /></svg><span> facebook</span></a>
-                    <a class="t" rel="nofollow" href="https://twitter.com/intent/tweet?text=Rürup-Renten Vergleich 2018&url=/gh-r24/vergleich/"><svg class="icon"><use xlink:href="#twitter" /></svg><span> twitter</span></a>
+                    <a class="f" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=/vergleich/" ><svg class="icon"><use xlink:href="#facebook" /></svg><span> facebook</span></a>
+                    <a class="t" rel="nofollow" href="https://twitter.com/intent/tweet?text=Rürup-Renten Vergleich 2018&url=/vergleich/"><svg class="icon"><use xlink:href="#twitter" /></svg><span> twitter</span></a>
                     <a class="x" rel="nofollow" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url="><svg class="icon"><use xlink:href="#xing" /></svg><span> xing</span></a>
-                    <a class="l" rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=/gh-r24/vergleich/&title=Rürup-Renten Vergleich 2018&summary=&source=webjeda"><svg class="icon"><use xlink:href="#linkedin" /></svg><span> linkedin</span></a>
-                    <a class="e" href="mailto:?subject=Rürup-Renten Vergleich 2018&amp;body=Check out this site /gh-r24/vergleich/"><svg class="icon"><use xlink:href="#mail" /></svg><span> email</span></a>
+                    <a class="l" rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=/vergleich/&title=Rürup-Renten Vergleich 2018&summary=&source=webjeda"><svg class="icon"><use xlink:href="#linkedin" /></svg><span> linkedin</span></a>
+                    <a class="e" href="mailto:?subject=Rürup-Renten Vergleich 2018&amp;body=Check out this site /vergleich/"><svg class="icon"><use xlink:href="#mail" /></svg><span> email</span></a>
                 </div>
             </div>
         </div>
