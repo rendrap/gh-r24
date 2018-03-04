@@ -23,6 +23,7 @@
   <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 
   <title>Fotograf München » r24 </title>
 
@@ -653,6 +654,13 @@ table tr:nth-child(2n-1) td {
 html {
   font: 300 1rem/1.8 'Lato', sans-serif; }
 
+strong, b {
+  font: 400 1rem/1.8 'Lato', sans-serif;
+  color: #222; }
+
+figure {
+  margin: 0; }
+
 body {
   /*font: normal 1em/1.6em Arial, sans-serif;*/
   font: 300 1rem/1.8 'Lato', sans-serif;
@@ -722,9 +730,7 @@ html, button, input, select, textarea,
     width: 2.5rem;
     /* same as padding-left set on li */ }
   .margin10 {
-    margin: 1rem 10rem .5rem 10rem; }
-  .content-wrapper article {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13); } }
+    margin: 1rem 10rem .5rem 10rem; } }
 
 @media only screen and (max-width: 39.9375em) {
   .content-wrapper article {
@@ -785,6 +791,22 @@ h4 {
 
 h5, h6 {
   font-size: 0.875em; }
+
+.column, .columns {
+  float: left;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  box-sizing: border-box; }
+
+.amp-carousel-slide {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  box-sizing: border-box;
+  width: 33.33%; }
+
+.img-row-height {
+  max-height: 171.656px;
+  box-sizing: border-box; }
 
 @media only screen and (max-width: 39.9375em) {
   .main {
@@ -1708,26 +1730,80 @@ amp-selector [option][selected] {
 
     </div>
 
-    
-<div class="share-box-wrapper show-for-medium">
     <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-16-24">
-            <div class="share-box share-box-content">
-                <div class="share-box-heading">Share this:</div>
-                <div class="share-box-button">
-                    <a class="f" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=/gh-r24/" ><svg class="icon"><use xlink:href="#facebook" /></svg><span> facebook</span></a>
-                    <a class="t" rel="nofollow" href="https://twitter.com/intent/tweet?text=Fotograf München&url=/gh-r24/"><svg class="icon"><use xlink:href="#twitter" /></svg><span> twitter</span></a>
-                    <a class="x" rel="nofollow" href="https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url="><svg class="icon"><use xlink:href="#xing" /></svg><span> xing</span></a>
-                    <a class="l" rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=/gh-r24/&title=Fotograf München&summary=&source=webjeda"><svg class="icon"><use xlink:href="#linkedin" /></svg><span> linkedin</span></a>
-                    <a class="e" href="mailto:?subject=Fotograf München&amp;body=Check out this site /gh-r24/"><svg class="icon"><use xlink:href="#mail" /></svg><span> email</span></a>
-                </div>
-            </div>
+    <div class="pure-u-1 pure-u-md-24-24 pure-u-sm-24-24 content-wrapper img-row-height">
+
+        <div class="pure-u-md-8-24 pure-u-sm-12-24 columns">
+            <figure class="cat-teaser-image">
+                <amp-img src=/gh-r24/images/Architektur-Fotograf-Muenchen.jpg alt="Architektur-Fotograf-Muenchen" width="370" height="185" layout="responsive" class="m1">
+                    <noscript>
+                        <img src=/gh-r24/images/Architektur-Fotograf-Muenchen.jpg width="370" height="185" alt="Architektur-Fotograf-Muenchen">
+                    </noscript>
+                </amp-img>
+            </figure>
         </div>
-        <div class="pure-u-md-8-24">
-            &nbsp;
+
+        <div class="pure-u-md-8-24 pure-u-sm-12-24 columns">
+            <figure class="cat-teaser-image">
+                <amp-img src=/gh-r24/images/Business-Fotograf-Muenchen.jpg alt="Business-Fotograf-Muenchen" width="370" height="185" layout="responsive" class="m1">
+                    <noscript>
+                        <img src=/gh-r24/images/Business-Fotograf-Muenchen.jpg width="370" height="185" alt="Business-Fotograf-Muenchen">
+                    </noscript>
+                </amp-img>
+            </figure>
         </div>
+
+        <div class="pure-u-md-8-24 hide-for-small-only columns">
+            <figure class="cat-teaser-image">
+                <amp-img src=/gh-r24/images/Fashion-Fotograf-Muenchen.jpg alt="Fashion-Fotograf-Muenchen" width="370" height="185" layout="responsive" class="m1">
+                    <noscript>
+                        <img src=/gh-r24/images/Fashion-Fotograf-Muenchen.jpg width="370" height="185" alt="Fashion-Fotograf-Muenchen">
+                    </noscript>
+                </amp-img>
+            </figure>
+        </div>
+
     </div>
 </div>
+
+<!-- AMP Carousel Start -->
+
+<!-- <div class="pure-g">
+    <div class="pure-u-1 pure-u-md-24-24 pure-u-sm-24-24 content-wrapper img-row-height">
+
+        <amp-carousel height="171.656"
+        layout="fixed-height"
+        type="carousel">
+        <amp-img src=/gh-r24/images/Architektur-Fotograf-Muenchen.jpg
+            width="auto"
+            height="185"
+            alt="Architektur-Fotograf-Muenche"></amp-img>
+        <amp-img src=/gh-r24/images/Business-Fotograf-Muenchen.jpg
+            width="auto"
+            height="185"
+            alt="Business-Fotograf-Muenchen"></amp-img>
+        <amp-img src=/gh-r24/images/Fashion-Fotograf-Muenchen.jpg
+            width="auto"
+            height="185"
+            alt="Fashion-Fotograf-Muenchen"></amp-img>
+        <amp-img src=/gh-r24/images/Food-Fotograf-Muenchen.jpg
+            width="auto"
+            height="185"
+            alt="Food-Fotograf-Muenchen"></amp-img>
+        <amp-img src=/gh-r24/images/Hochzeits-Fotograf-Muenchen.jpg
+            width="auto"
+            height="185"
+            alt="Hochzeits-Fotograf-Muenchen"></amp-img>
+        <amp-img src=/gh-r24/images/Restaurant-Fotograf-Muenchen.jpg
+            width="auto"
+            height="185"
+            alt="Restaurant-Fotograf-Muenchen"></amp-img>
+        </amp-carousel>
+
+    </div>
+</div> -->
+
+<!-- AMP Carousel End -->
 
 </div>
 
