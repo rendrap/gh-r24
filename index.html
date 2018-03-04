@@ -802,13 +802,46 @@ h5, h6 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   box-sizing: border-box;
-  width: 33.33%;
   margin-left: 0; }
+
+.show-for-medium .amp-carousel-slide {
+  width: 33.33%; }
 
 .img-row-height {
   max-height: 171.656px;
   box-sizing: border-box; }
 
+/* Category Teaser Boxes START */
+.cat-teaser-text-box {
+  padding: 1rem;
+  text-align: center; }
+
+.cat-teaser-text-box-cat-name {
+  position: relative;
+  /*width: 280px;*/
+  top: -32px;
+  left: 0; }
+
+.cat-teaser-text-box-cat-name span {
+  color: #000;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold; }
+
+.cat-teaser-text-box-cat-name span a {
+  background-color: rgba(200, 209, 43, 0.9);
+  padding: .5rem 1rem;
+  font-size: .8rem;
+  font-weight: 500;
+  color: #fff; }
+
+.cat-teaser-text-box-cat-name span a:hover {
+  text-decoration: none; }
+
+.cat-teaser-head a {
+  font-weight: 500; }
+
+/* Category Teaser Boxes END */
 @media only screen and (max-width: 39.9375em) {
   .main {
     padding: 1em 0 2em 0; }
@@ -1536,11 +1569,11 @@ amp-selector [option][selected] {
                                 </li>
                                 
                                 <li class="pure-menu-item pure-menu-selected">
-                                    <a class="pure-menu-link" href="/gh-r24/Fashion%20Fotografie/">Fashion Fotografie</a>
+                                    <a class="pure-menu-link" href="/gh-r24/Fashion-Fotografie/">Fashion Fotografie</a>
                                 </li>
                                 
                                 <li class="pure-menu-item pure-menu-selected">
-                                    <a class="pure-menu-link" href="/gh-r24/Food%20Fotografie/">Food Fotografie</a>
+                                    <a class="pure-menu-link" href="/gh-r24/Food-Fotografie/">Food Fotografie</a>
                                 </li>
                                 
                                 <li class="pure-menu-item pure-menu-selected">
@@ -1616,11 +1649,11 @@ amp-selector [option][selected] {
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Fashion%20Fotografie/">Fashion Fotografie</a>
+                                        <a class="pure-menu-link" href="/gh-r24/Fashion-Fotografie/">Fashion Fotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Food%20Fotografie/">Food Fotografie</a>
+                                        <a class="pure-menu-link" href="/gh-r24/Food-Fotografie/">Food Fotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
@@ -1731,7 +1764,7 @@ amp-selector [option][selected] {
 
     </div>
 
-    <div class="pure-g">
+    <!-- <div class="pure-g">
     <div class="pure-u-1 pure-u-md-24-24 pure-u-sm-24-24 content-wrapper img-row-height">
 
         <div class="pure-u-md-8-24 pure-u-sm-12-24 columns">
@@ -1765,40 +1798,101 @@ amp-selector [option][selected] {
         </div>
 
     </div>
-</div>
+</div> -->
 
 <!-- AMP Carousel Start -->
 
-<div class="pure-g">
+<div class="pure-g show-for-medium">
     <div class="pure-u-1 pure-u-md-24-24 pure-u-sm-24-24 content-wrapper img-row-height">
 
         <amp-carousel height="171.656"
         layout="fixed-height"
-        type="carousel">
-        <amp-img src=/gh-r24/images/Architektur-Fotograf-Muenchen.jpg layout="responsive"
-            width="370"
-            height="185"
-            alt="Architektur-Fotograf-Muenche"></amp-img>
-        <amp-img src=/gh-r24/images/Business-Fotograf-Muenchen.jpg layout="responsive"
-            width="370"
-            height="185"
-            alt="Business-Fotograf-Muenchen"></amp-img>
-        <amp-img src=/gh-r24/images/Fashion-Fotograf-Muenchen.jpg layout="responsive"
-            width="370"
-            height="185"
-            alt="Fashion-Fotograf-Muenchen"></amp-img>
-        <amp-img src=/gh-r24/images/Food-Fotograf-Muenchen.jpg layout="responsive"
-            width="370"
-            height="185"
-            alt="Food-Fotograf-Muenchen"></amp-img>
-        <amp-img src=/gh-r24/images/Hochzeits-Fotograf-Muenchen.jpg layout="responsive"
-            width="370"
-            height="185"
-            alt="Hochzeits-Fotograf-Muenchen"></amp-img>
-        <amp-img src=/gh-r24/images/Restaurant-Fotograf-Muenchen.jpg layout="responsive"
-            width="370"
-            height="185"
-            alt="Restaurant-Fotograf-Muenchen"></amp-img>
+        type="carousel"
+        controls>
+
+        <figure>
+            <a href=/gh-r24/Architekturfotografie/>
+            <amp-img src=/gh-r24/images/Architektur-Fotograf-Muenchen.jpg layout="responsive"
+                width="370"
+                height="185"
+                alt="Architektur-Fotograf-Muenche"></amp-img></a>
+            <div class="cat-teaser-text-box">
+                <div class="cat-teaser-text-box-cat-name">
+                    <span><a href=/gh-r24/Architekturfotografie/>Architektur</a></span>
+                </div>
+            </div>
+        </figure>
+
+        <figure>
+            <a href=/gh-r24/Businessfotografie/>
+            <amp-img src=/gh-r24/images/Business-Fotograf-Muenchen.jpg layout="responsive"
+                width="370"
+                height="185"
+                alt="Business-Fotograf-Muenchen"></amp-img></a>
+            <div class="cat-teaser-text-box">
+                <div class="cat-teaser-text-box-cat-name">
+                    <span><a href=/gh-r24/Businessfotografie/>Business</a></span>
+                </div>
+            </div>
+
+        </figure>
+
+        <figure>
+            <a href=/gh-r24/Fashion-Fotografie/>
+            <amp-img src=/gh-r24/images/Fashion-Fotograf-Muenchen.jpg layout="responsive"
+                width="370"
+                height="185"
+                alt="Fashion-Fotograf-Muenchen"></amp-img></a>
+            <div class="cat-teaser-text-box">
+                <div class="cat-teaser-text-box-cat-name">
+                    <span><a href=/gh-r24/Fashion-Fotografie/>Fashion</a></span>
+                </div>
+            </div>
+
+            </figure>
+
+        <figure>
+            <a href=/gh-r24/Food-Fotografie/>
+            <amp-img src=/gh-r24/images/Food-Fotograf-Muenchen.jpg layout="responsive"
+                width="370"
+                height="185"
+                alt="Food-Fotograf-Muenchen"></amp-img></a>
+            <div class="cat-teaser-text-box">
+                <div class="cat-teaser-text-box-cat-name">
+                    <span><a href/gh-r24/Food-Fotografie/>Food</a></span>
+                </div>
+            </div>
+
+        </figure>
+
+        <figure>
+            <a href=/gh-r24/Hochzeitsfotografie/>
+            <amp-img src=/gh-r24/images/Hochzeits-Fotograf-Muenchen.jpg layout="responsive"
+                width="370"
+                height="185"
+                alt="Hochzeits-Fotograf-Muenchen"></amp-img></a>
+            <div class="cat-teaser-text-box">
+                <div class="cat-teaser-text-box-cat-name">
+                    <span><a href=/gh-r24/Hochzeitsfotografie/>Hochzeit</a></span>
+                </div>
+            </div>
+
+        </figure>
+
+        <figure>
+            <a href=/gh-r24/Restaurantfotografie/>
+            <amp-img src=/gh-r24/images/Restaurant-Fotograf-Muenchen.jpg layout="responsive"
+                width="370"
+                height="185"
+                alt="Restaurant-Fotograf-Muenchen"></amp-img></a>
+            <div class="cat-teaser-text-box">
+                <div class="cat-teaser-text-box-cat-name">
+                    <span><a href=/gh-r24/Restaurantfotografie/>Restaurant</a></span>
+                </div>
+            </div>
+
+        </figure>
+
         </amp-carousel>
 
     </div>
