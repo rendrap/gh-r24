@@ -898,8 +898,6 @@ amp-user-notification.cookie-info .ampstart-btn {
   font-size: .9rem; }
 
 @media screen and (max-width: 40em) {
-  footer.wrapper {
-    margin-top: -80px; }
   .closing-line, .closing-line ul li a {
     text-align: center; }
   .footer-links {
@@ -1084,6 +1082,62 @@ a.button:hover, a.button:focus {
   /*width: 100%;*/
   margin-right: 0;
   margin-left: 0; }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  background-color: #fff;
+  padding-left: 0;
+  border: none;
+  line-height: 2rem;
+  margin-bottom: .5rem;
+  list-style: none; }
+
+.breadcrumbs::before, .breadcrumbs::after {
+  content: ' ';
+  display: table; }
+
+.breadcrumbs::after {
+  clear: both; }
+
+.breadcrumbs li {
+  float: left;
+  color: #0a0a0a;
+  font-size: 0.6875rem;
+  cursor: default;
+  text-transform: uppercase; }
+
+.breadcrumbs a, .breadcrumbs h1 {
+  font-size: 0.6875rem;
+  line-height: 0.6875rem;
+  color: #aaa; }
+
+.breadcrumbs > *:hover a, .breadcrumbs > *:focus a {
+  text-decoration: none; }
+
+.breadcrumbs ul li a:hover {
+  text-decoration: underline; }
+
+.breadcrumbs > *:before {
+  margin: 0 0.5rem; }
+
+.breadcrumbs li h1 {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  display: inline;
+  color: #aaa;
+  margin-left: 0;
+  margin-right: 0; }
+
+.breadcrumbs li:not(:last-child)::after {
+  color: #cacaca;
+  content: "/";
+  margin: 0 0.75rem;
+  position: relative;
+  top: 1px;
+  opacity: 1; }
+
+.breadcrumbs ul li {
+  line-height: 0.7em; }
 
 /* ****************************************************************** */
 /* ************************** ACCORDION ***************************** */
@@ -1545,19 +1599,19 @@ amp-selector [option][selected] {
                                 <header>Leistungen</header>
                                 <ul>
                                     
-                                    <li><a href="/gh-r24/Architekturfotografie/" class="text-decoration-none">Architekturfotografie</a></li>
+                                    <li><a href="/gh-r24/architekturfotografie/" class="text-decoration-none">Architekturfotografie</a></li>
                                     
-                                    <li><a href="/gh-r24/Businessfotografie/" class="text-decoration-none">Businessfotografie</a></li>
+                                    <li><a href="/gh-r24/businessfotografie/" class="text-decoration-none">Businessfotografie</a></li>
                                     
-                                    <li><a href="/gh-r24/Fashion-Fotografie/" class="text-decoration-none">Fashion Fotografie</a></li>
+                                    <li><a href="/gh-r24/fashion-fotografie/" class="text-decoration-none">Fashion Fotografie</a></li>
                                     
-                                    <li><a href="/gh-r24/Food-Fotografie/" class="text-decoration-none">Food Fotografie</a></li>
+                                    <li><a href="/gh-r24/food-fotografie/" class="text-decoration-none">Food Fotografie</a></li>
                                     
-                                    <li><a href="/gh-r24/Hochzeitsfotografie/" class="text-decoration-none">Hochzeitsfotografie</a></li>
+                                    <li><a href="/gh-r24/hochzeitsfotografie/" class="text-decoration-none">Hochzeitsfotografie</a></li>
                                     
-                                    <li><a href="/gh-r24/Portraitfotografie/" class="text-decoration-none">Portraitfotografie</a></li>
+                                    <li><a href="/gh-r24/portraitfotografie/" class="text-decoration-none">Portraitfotografie</a></li>
                                     
-                                    <li><a href="/gh-r24/Restaurantfotografie/" class="text-decoration-none">Restaurantfotografie</a></li>
+                                    <li><a href="/gh-r24/restaurantfotografie/" class="text-decoration-none">Restaurantfotografie</a></li>
                                     
                                 </ul>
                             </section>
@@ -1566,11 +1620,11 @@ amp-selector [option][selected] {
                 
             
                 
-                    <li class="menu-item"><a href="/gh-r24/Team/">Team</a></li>
+                    <li class="menu-item"><a href="/gh-r24/team/">Team</a></li>
                 
             
                 
-                    <li class="menu-item"><a href="/gh-r24/Kontakt/">Kontakt</a></li>
+                    <li class="menu-item"><a href="/gh-r24/kontakt/">Kontakt</a></li>
                 
             
         </ul>
@@ -1597,35 +1651,35 @@ amp-selector [option][selected] {
 
                             
                             <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover pure-menu-selected">
-                                <a class="pure-menu-link" href="/gh-r24/">Leistungen<i class="material-icons">&#xE5CF;</i></a>
+                                <a class="pure-menu-link" href="/gh-r24/leistungen/">Leistungen<i class="material-icons">&#xE5CF;</i></a>
                                 <ul class="pure-menu-children">
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Architekturfotografie/">Architekturfotografie</a>
+                                        <a class="pure-menu-link" href="/gh-r24/architekturfotografie/">Architekturfotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Businessfotografie/">Businessfotografie</a>
+                                        <a class="pure-menu-link" href="/gh-r24/businessfotografie/">Businessfotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Fashion-Fotografie/">Fashion Fotografie</a>
+                                        <a class="pure-menu-link" href="/gh-r24/fashion-fotografie/">Fashion Fotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Food-Fotografie/">Food Fotografie</a>
+                                        <a class="pure-menu-link" href="/gh-r24/food-fotografie/">Food Fotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Hochzeitsfotografie/">Hochzeitsfotografie</a>
+                                        <a class="pure-menu-link" href="/gh-r24/hochzeitsfotografie/">Hochzeitsfotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Portraitfotografie/">Portraitfotografie</a>
+                                        <a class="pure-menu-link" href="/gh-r24/portraitfotografie/">Portraitfotografie</a>
                                     </li>
                                     
                                     <li class="pure-menu-item pure-menu-selected">
-                                        <a class="pure-menu-link" href="/gh-r24/Restaurantfotografie/">Restaurantfotografie</a>
+                                        <a class="pure-menu-link" href="/gh-r24/restaurantfotografie/">Restaurantfotografie</a>
                                     </li>
                                     
                                 </ul>
@@ -1647,7 +1701,7 @@ amp-selector [option][selected] {
 
                             
                             <li class="pure-menu-item pure-menu-selected">
-                                <a class="pure-menu-link" href="/gh-r24/Team/">Team</a>
+                                <a class="pure-menu-link" href="/gh-r24/team/">Team</a>
                             </li>
                             
                         
@@ -1655,7 +1709,7 @@ amp-selector [option][selected] {
 
                             
                             <li class="pure-menu-item pure-menu-selected">
-                                <a class="pure-menu-link" href="/gh-r24/Kontakt/">Kontakt</a>
+                                <a class="pure-menu-link" href="/gh-r24/kontakt/">Kontakt</a>
                             </li>
                             
                         
@@ -1725,105 +1779,7 @@ Als Faustregel zur Rürup-Rente bezeichnete die <em>BILD</em>: „Je näher man 
 
     </div>
 
-    <!-- AMP Carousel Start -->
-
-<!-- <div class="pure-g show-for-medium"> -->
-<div class="pure-g">
-    <div class="pure-u-1 pure-u-md-24-24 pure-u-sm-24-24 content-wrapper img-row-height">
-
-        <amp-carousel height="196"
-        layout="fixed-height"
-        type="carousel">
-
-        <figure class="pure-u-md-8-24 pure-u-sm-12-24">
-            <a href=/gh-r24/Architekturfotografie/>
-            <amp-img src=/gh-r24/images/Architektur-Fotograf-Muenchen.jpg layout="responsive"
-                width="370"
-                height="185"
-                alt="Architektur-Fotograf-Muenche"></amp-img></a>
-            <div class="cat-teaser-text-box">
-                <div class="cat-teaser-text-box-cat-name">
-                    <span><a href=/gh-r24/Architekturfotografie/>Architektur</a></span>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="pure-u-md-8-24 pure-u-sm-12-24">
-            <a href=/gh-r24/Businessfotografie/>
-            <amp-img src=/gh-r24/images/Business-Fotograf-Muenchen.jpg layout="responsive"
-                width="370"
-                height="185"
-                alt="Business-Fotograf-Muenchen"></amp-img></a>
-            <div class="cat-teaser-text-box">
-                <div class="cat-teaser-text-box-cat-name">
-                    <span><a href=/gh-r24/Businessfotografie/>Business</a></span>
-                </div>
-            </div>
-
-        </figure>
-
-        <figure class="pure-u-md-8-24 pure-u-sm-12-24">
-            <a href=/gh-r24/Fashion-Fotografie/>
-            <amp-img src=/gh-r24/images/Fashion-Fotograf-Muenchen.jpg layout="responsive"
-                width="370"
-                height="185"
-                alt="Fashion-Fotograf-Muenchen"></amp-img></a>
-            <div class="cat-teaser-text-box">
-                <div class="cat-teaser-text-box-cat-name">
-                    <span><a href=/gh-r24/Fashion-Fotografie/>Fashion</a></span>
-                </div>
-            </div>
-
-            </figure>
-
-        <figure class="pure-u-md-8-24 pure-u-sm-12-24">
-            <a href=/gh-r24/Food-Fotografie/>
-            <amp-img src=/gh-r24/images/Food-Fotograf-Muenchen.jpg layout="responsive"
-                width="370"
-                height="185"
-                alt="Food-Fotograf-Muenchen"></amp-img></a>
-            <div class="cat-teaser-text-box">
-                <div class="cat-teaser-text-box-cat-name">
-                    <span><a href=/gh-r24/Food-Fotografie/>Food</a></span>
-                </div>
-            </div>
-
-        </figure>
-
-        <figure class="pure-u-md-8-24 pure-u-sm-12-24">
-            <a href=/gh-r24/Hochzeitsfotografie/>
-            <amp-img src=/gh-r24/images/Hochzeits-Fotograf-Muenchen.jpg layout="responsive"
-                width="370"
-                height="185"
-                alt="Hochzeits-Fotograf-Muenchen"></amp-img></a>
-            <div class="cat-teaser-text-box">
-                <div class="cat-teaser-text-box-cat-name">
-                    <span><a href=/gh-r24/Hochzeitsfotografie/>Hochzeit</a></span>
-                </div>
-            </div>
-
-        </figure>
-
-        <figure class="pure-u-md-8-24 pure-u-sm-12-24">
-            <a href=/gh-r24/Restaurantfotografie/>
-            <amp-img src=/gh-r24/images/Restaurant-Fotograf-Muenchen.jpg layout="responsive"
-                width="370"
-                height="185"
-                alt="Restaurant-Fotograf-Muenchen"></amp-img></a>
-            <div class="cat-teaser-text-box">
-                <div class="cat-teaser-text-box-cat-name">
-                    <span><a href=/gh-r24/Restaurantfotografie/>Restaurant</a></span>
-                </div>
-            </div>
-
-        </figure>
-
-        </amp-carousel>
-
-    </div>
-</div>
-
-<!-- AMP Carousel End -->
+    
 
 </div>
 
