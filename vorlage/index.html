@@ -24,6 +24,7 @@
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
 
   <title>!vorlage » r24 </title>
 
@@ -711,7 +712,6 @@ html, button, input, select, textarea,
   article h2, article h3, article h4 {
     margin: 1rem 10rem .5rem 10rem; }
   article img {
-    max-width: 1000px;
     /*margin-left: -5rem;*/
     /*margin-right: -5rem;*/ }
   article p {
@@ -736,7 +736,9 @@ html, button, input, select, textarea,
 
 @media only screen and (max-width: 39.9375em) {
   .content-wrapper article {
-    padding: 1em .5em; } }
+    padding: 1em .5em; }
+  nav.margin10 {
+    padding: 0 .5em; } }
 
 a {
   font: 300 1rem/1.8 'Lato', sans-serif;
@@ -843,6 +845,25 @@ h5, h6 {
   font-weight: 500; }
 
 /* Category Teaser Boxes END */
+.image-row-lightbox hr {
+  margin: 1.25rem auto; }
+
+.close-gallery-button {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+#lightbox1 .lightbox-button {
+  background-color: #e43224; }
+
+.m2 {
+  margin: 1.5rem; }
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em; }
+
 @media only screen and (max-width: 39.9375em) {
   .main {
     padding: 1em 0 2em 0; }
@@ -1135,6 +1156,9 @@ a.button:hover, a.button:focus {
   position: relative;
   top: 1px;
   opacity: 1; }
+
+.breadcrumbs .current-path {
+  font-weight: bold; }
 
 .breadcrumbs ul li {
   line-height: 0.7em; }
