@@ -26,7 +26,7 @@
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
 
-  <title>Rürup-Rente für Arbeitnehmer » r24 </title>
+  <title>Architekturfotografie - der wichtige Blick für das Detail » r24 </title>
 
   
   <meta name="description" content="Wir fangen die ganze Schönheit und Individualität von Immobilien gekonnt ein und nutzen dafür ein großes Repertoire an technischen Möglichkeiten.">
@@ -851,8 +851,8 @@ h5, h6 {
 .close-gallery-button {
   z-index: 1;
   position: absolute;
-  top: 10px;
-  right: 10px; }
+  top: 0;
+  right: 0; }
 
 #lightbox1 .lightbox-button {
   background-color: #e43224; }
@@ -874,7 +874,46 @@ h5, h6 {
   h2 {
     font-size: 1em;
     line-height: 1.5em;
-    font-weight: bold; } }
+    font-weight: bold; }
+  .image-row-lightbox .pure-g {
+    max-width: 275px;
+    text-align: center;
+    margin: 0 auto; } }
+
+/* CTA BOX */
+@media screen and (max-width: 40em) {
+  .cta-box-wrapper {
+    float: right;
+    width: 100%;
+    margin: .5rem 0; } }
+
+@media screen and (min-width: 40.01em) {
+  .cta-box-wrapper {
+    float: right;
+    width: 300px;
+    margin: 1rem 5rem 2rem 2.5rem; } }
+
+.cta-box {
+  text-align: center;
+  /*cursor: pointer;*/
+  -webkit-appearance: none;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: .85em 1em;
+  background-color: #2ba6cb;
+  color: #fefefe;
+  display: block;
+  width: 100%;
+  margin: 0 0 1rem 0;
+  line-height: 1.2rem;
+  font-size: 1rem; }
+
+.cta-box a {
+  color: #fefefe;
+  text-decoration: underline;
+  line-height: 1.2rem; }
 
 amp-user-notification.cookie-info {
   background-color: rgba(0, 0, 0, 0.7);
@@ -1765,9 +1804,9 @@ amp-selector [option][selected] {
 
 
 <div id="hero-img">
-    <amp-img src=/gh-r24/images/architektur-fotografie-fotograf-muenchen.jpg alt="Rürup-Rente für Arbeitnehmer" width="1200" height="400" layout="responsive" class="m1">
+    <amp-img src=/gh-r24/images/architektur-fotografie-fotograf-muenchen.jpg alt="Architekturfotografie - der wichtige Blick für das Detail" width="1200" height="400" layout="responsive" class="m1">
         <noscript>
-            <img src=/gh-r24/images/architektur-fotografie-fotograf-muenchen.jpg width="1200" height="400" alt="Rürup-Rente für Arbeitnehmer">
+            <img src=/gh-r24/images/architektur-fotografie-fotograf-muenchen.jpg width="1200" height="400" alt="Architekturfotografie - der wichtige Blick für das Detail">
         </noscript>
     </amp-img>
 </div>
@@ -1791,14 +1830,18 @@ amp-selector [option][selected] {
         </li>
 
 
-        <!-- <li><h1 itemprop="headline">Rürup-Rente für Arbeitnehmer</h1></li> -->
+        <!-- <li><h1 itemprop="headline">Architekturfotografie - der wichtige Blick für das Detail</h1></li> -->
     </ul>
 </nav><!-- /Breadcrumbs -->
 
 
+            <div class="cta-box-wrapper">
+	<div class="cta-box">Wir beraten Sie gerne:<br>089 / 416 120 10</div>
+	<div class="cta-box">Hier geht es zum<br><a href="/kontakt/">Kontaktformular</a></div>
+</div>
             <article>
                 
-                <h1 class="margin10">Rürup-Rente für Arbeitnehmer</h1>
+                <h2 class="margin10">Architekturfotografie - der wichtige Blick für das Detail</h1>
                 
 
                 
@@ -1818,11 +1861,17 @@ amp-selector [option][selected] {
 <button class="ampstart-btn caps m2 close-gallery-button lightbox-button" on="tap:gallery-lightbox.close" role="button" tabindex="0">Close</button>
 </div>
 </amp-image-lightbox>
-<figure class="pure-u-md-6-24 pure-u-sm-12-24 columns">
-<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Architektur-Fotograf-Muenchen.jpg" width="370" height="185" layout="responsive" alt="Architektur-Fotograf-Muenche"></amp-img>
+<figure class="pure-u-md-6-24 pure-u-sm-24-24 columns">
+<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Architektur-Fotograf-Muenchen-089_001-533x800.jpg" width="270" height="180" layout="responsive" alt="Architektur Fotograf Fotografie München"></amp-img>
 </figure>
-<figure class="pure-u-md-6-24 pure-u-sm-12-24 columns">
-<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Architektur-Fotograf-Muenchen.jpg" width="370" height="185" layout="responsive" alt="Architektur-Fotograf-Muenche"></amp-img>
+<figure class="pure-u-md-6-24 pure-u-sm-24-24 columns">
+<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Architektur-Fotograf-Muenchen-089_002-533x800.jpg" width="270" height="180" layout="responsive" alt="Architektur Fotograf Fotografie München"></amp-img>
+</figure>
+<figure class="pure-u-md-6-24 pure-u-sm-24-24 columns">
+<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Architektur-Fotograf-Muenchen-089_003-533x800.jpg" width="270" height="180" layout="responsive" alt="Architektur Fotograf Fotografie München"></amp-img>
+</figure>
+<figure class="pure-u-md-6-24 pure-u-sm-24-24 columns">
+<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Architektur-Fotograf-Muenchen-089_004-1200x800.jpg" width="270" height="180" layout="responsive" alt="Architektur Fotograf Fotografie München"></amp-img>
 </figure>
 </div>
 </div>
