@@ -709,6 +709,9 @@ html, button, input, select, textarea,
   article p {
     margin-left: 10rem;
     margin-right: 10rem; }
+  article .team-wrap p {
+    margin-left: 0;
+    margin-right: 0; }
   article h2, article h3, article h4 {
     margin: 1rem 10rem .5rem 10rem; }
   article img {
@@ -913,6 +916,38 @@ h5, h6 {
   color: #fefefe;
   text-decoration: underline;
   line-height: 1.2rem; }
+
+/* *************** */
+/* Team page */
+/* *************** */
+.no-left-padding {
+  padding-left: 0; }
+
+.team-wrap {
+  margin: 0 10rem;
+  display: inherit; }
+
+.bio-wrap {
+  float: left;
+  display: inline-block; }
+
+hr.team-page {
+  max-width: 75rem;
+  height: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #cacaca;
+  border-left: 0;
+  margin: 1.25rem auto;
+  clear: both; }
+
+@media only screen and (max-width: 39.9375em) {
+  .team-wrap {
+    margin: 0; }
+  .pd-left {
+    padding-left: 0.9375rem; }
+  article h2.pd-left {
+    padding-left: 0.9375rem; } }
 
 amp-user-notification.cookie-info {
   background-color: rgba(0, 0, 0, 0.7);
