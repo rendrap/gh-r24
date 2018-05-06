@@ -13,14 +13,10 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
-  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 
   
   
 
-  <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
-  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
@@ -36,9 +32,7 @@
   <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="/images/manifest.json">
   <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/images/favicon.ico">
   <meta name="msapplication-config" content="/images/browserconfig.xml">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- [if lte IE 8]>
@@ -192,7 +186,6 @@ table {
 .pure-g {
   letter-spacing: -.31em;
   text-rendering: optimizespeed;
-  font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -204,295 +197,107 @@ table {
   table .pure-g {
     display: block; } }
 
-.opera-only :-o-prefocus, .pure-g {
+.opera-only:-o-prefocus, .pure-g {
   word-spacing: -.43em; }
 
-.pure-u, .pure-u-1, .pure-u-1-1, .pure-u-1-12, .pure-u-1-2, .pure-u-1-24, .pure-u-1-3, .pure-u-1-4, .pure-u-1-5, .pure-u-1-6, .pure-u-1-8, .pure-u-10-24, .pure-u-11-12, .pure-u-11-24, .pure-u-12-24, .pure-u-13-24, .pure-u-14-24, .pure-u-15-24, .pure-u-16-24, .pure-u-17-24, .pure-u-18-24, .pure-u-19-24, .pure-u-2-24, .pure-u-2-3, .pure-u-2-5, .pure-u-20-24, .pure-u-21-24, .pure-u-22-24, .pure-u-23-24, .pure-u-24-24, .pure-u-3-24, .pure-u-3-4, .pure-u-3-5, .pure-u-3-8, .pure-u-4-24, .pure-u-4-5, .pure-u-5-12, .pure-u-5-24, .pure-u-5-5, .pure-u-5-6, .pure-u-5-8, .pure-u-6-24, .pure-u-7-12, .pure-u-7-24, .pure-u-7-8, .pure-u-8-24, .pure-u-9-24 {
-  display: inline-block;
-  zoom: 1;
-  letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: top;
-  text-rendering: auto; }
-
-.pure-u-1-24 {
-  width: 4.1667%; }
-
-.pure-u-1-12, .pure-u-2-24 {
-  width: 8.3333%; }
-
-.pure-u-1-8, .pure-u-3-24 {
-  width: 12.5%; }
-
-.pure-u-1-6, .pure-u-4-24 {
-  width: 16.6667%; }
-
-.pure-u-1-5 {
-  width: 20%; }
-
-.pure-u-5-24 {
-  width: 20.8333%; }
-
-.pure-u-1-4, .pure-u-6-24 {
-  width: 25%; }
-
-.pure-u-7-24 {
-  width: 29.1667%; }
-
-.pure-u-1-3, .pure-u-8-24 {
-  width: 33.3333%; }
-
-.pure-u-3-8, .pure-u-9-24 {
-  width: 37.5%; }
-
-.pure-u-2-5 {
-  width: 40%; }
-
-.pure-u-10-24, .pure-u-5-12 {
-  width: 41.6667%; }
-
-.pure-u-11-24 {
-  width: 45.8333%; }
-
-.pure-u-1-2, .pure-u-12-24 {
-  width: 50%; }
-
-.pure-u-13-24 {
-  width: 54.1667%; }
-
-.pure-u-14-24, .pure-u-7-12 {
-  width: 58.3333%; }
-
-.pure-u-3-5 {
-  width: 60%; }
-
-.pure-u-15-24, .pure-u-5-8 {
-  width: 62.5%; }
-
-.pure-u-16-24, .pure-u-2-3 {
-  width: 66.6667%; }
-
-.pure-u-17-24 {
-  width: 70.8333%; }
-
-.pure-u-18-24, .pure-u-3-4 {
-  width: 75%; }
-
-.pure-u-19-24 {
-  width: 79.1667%; }
-
-.pure-u-4-5 {
-  width: 80%; }
-
-.pure-u-20-24, .pure-u-5-6 {
-  width: 83.3333%; }
-
-.pure-u-21-24, .pure-u-7-8 {
-  width: 87.5%; }
-
-.pure-u-11-12, .pure-u-22-24 {
-  width: 91.6667%; }
-
-.pure-u-23-24 {
-  width: 95.8333%; }
-
-.pure-u-1, .pure-u-1-1, .pure-u-24-24, .pure-u-5-5 {
-  width: 100%; }
-
 /* grids-qmedia.css */
-@media screen and (max-width: 39.9375em) {
-  .pure-u-sm-1, .pure-u-sm-1-1, .pure-u-sm-1-12, .pure-u-sm-1-2, .pure-u-sm-1-24, .pure-u-sm-1-3, .pure-u-sm-1-4, .pure-u-sm-1-5, .pure-u-sm-1-6, .pure-u-sm-1-8, .pure-u-sm-10-24, .pure-u-sm-11-12, .pure-u-sm-11-24, .pure-u-sm-12-24, .pure-u-sm-13-24, .pure-u-sm-14-24, .pure-u-sm-15-24, .pure-u-sm-16-24, .pure-u-sm-17-24, .pure-u-sm-18-24, .pure-u-sm-19-24, .pure-u-sm-2-24, .pure-u-sm-2-3, .pure-u-sm-2-5, .pure-u-sm-20-24, .pure-u-sm-21-24, .pure-u-sm-22-24, .pure-u-sm-23-24, .pure-u-sm-24-24, .pure-u-sm-3-24, .pure-u-sm-3-4, .pure-u-sm-3-5, .pure-u-sm-3-8, .pure-u-sm-4-24, .pure-u-sm-4-5, .pure-u-sm-5-12, .pure-u-sm-5-24, .pure-u-sm-5-5, .pure-u-sm-5-6, .pure-u-sm-5-8, .pure-u-sm-6-24, .pure-u-sm-7-12, .pure-u-sm-7-24, .pure-u-sm-7-8, .pure-u-sm-8-24, .pure-u-sm-9-24 {
+@media screen and (min-width: 0em) {
+  .qm-sm-1-12, .qm-sm-10-12, .qm-sm-11-12, .qm-sm-12-12, .qm-sm-2-12, .qm-sm-3-12, .qm-sm-4-12, .qm-sm-5-12, .qm-sm-6-12, .qm-sm-7-12, .qm-sm-8-12, .qm-sm-9-12 {
     display: inline-block;
     zoom: 1;
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto; }
-  .pure-u-sm-1-24 {
-    width: 4.1667%; }
-  .pure-u-sm-1-12, .pure-u-sm-2-24 {
+  .qm-sm-1-12 {
     width: 8.3333%; }
-  .pure-u-sm-1-8, .pure-u-sm-3-24 {
-    width: 12.5%; }
-  .pure-u-sm-1-6, .pure-u-sm-4-24 {
+  .qm-sm-2-12 {
     width: 16.6667%; }
-  .pure-u-sm-1-5 {
-    width: 20%; }
-  .pure-u-sm-5-24 {
-    width: 20.8333%; }
-  .pure-u-sm-1-4, .pure-u-sm-6-24 {
+  .qm-sm-3-12 {
     width: 25%; }
-  .pure-u-sm-7-24 {
-    width: 29.1667%; }
-  .pure-u-sm-1-3, .pure-u-sm-8-24 {
+  .qm-sm-4-12 {
     width: 33.3333%; }
-  .pure-u-sm-3-8, .pure-u-sm-9-24 {
-    width: 37.5%; }
-  .pure-u-sm-2-5 {
-    width: 40%; }
-  .pure-u-sm-10-24, .pure-u-sm-5-12 {
+  .qm-sm-5-12 {
     width: 41.6667%; }
-  .pure-u-sm-11-24 {
-    width: 45.8333%; }
-  .pure-u-sm-1-2, .pure-u-sm-12-24 {
+  .qm-sm-6-12 {
     width: 50%; }
-  .pure-u-sm-13-24 {
-    width: 54.1667%; }
-  .pure-u-sm-14-24, .pure-u-sm-7-12 {
+  .qm-sm-7-12 {
     width: 58.3333%; }
-  .pure-u-sm-3-5 {
-    width: 60%; }
-  .pure-u-sm-15-24, .pure-u-sm-5-8 {
-    width: 62.5%; }
-  .pure-u-sm-16-24, .pure-u-sm-2-3 {
+  .qm-sm-8-12 {
     width: 66.6667%; }
-  .pure-u-sm-17-24 {
-    width: 70.8333%; }
-  .pure-u-sm-18-24, .pure-u-sm-3-4 {
+  .qm-sm-9-12 {
     width: 75%; }
-  .pure-u-sm-19-24 {
-    width: 79.1667%; }
-  .pure-u-sm-4-5 {
-    width: 80%; }
-  .pure-u-sm-20-24, .pure-u-sm-5-6 {
+  .qm-sm-10-12 {
     width: 83.3333%; }
-  .pure-u-sm-21-24, .pure-u-sm-7-8 {
-    width: 87.5%; }
-  .pure-u-sm-11-12, .pure-u-sm-22-24 {
+  .qm-sm-11-12 {
     width: 91.6667%; }
-  .pure-u-sm-23-24 {
-    width: 95.8333%; }
-  .pure-u-sm-1, .pure-u-sm-1-1, .pure-u-sm-24-24, .pure-u-sm-5-5 {
+  .qm-sm-12-12 {
     width: 100%; } }
 
-@media screen and (min-width: 40em) {
-  .pure-u-md-1, .pure-u-md-1-1, .pure-u-md-1-12, .pure-u-md-1-2, .pure-u-md-1-24, .pure-u-md-1-3, .pure-u-md-1-4, .pure-u-md-1-5, .pure-u-md-1-6, .pure-u-md-1-8, .pure-u-md-10-24, .pure-u-md-11-12, .pure-u-md-11-24, .pure-u-md-12-24, .pure-u-md-13-24, .pure-u-md-14-24, .pure-u-md-15-24, .pure-u-md-16-24, .pure-u-md-17-24, .pure-u-md-18-24, .pure-u-md-19-24, .pure-u-md-2-24, .pure-u-md-2-3, .pure-u-md-2-5, .pure-u-md-20-24, .pure-u-md-21-24, .pure-u-md-22-24, .pure-u-md-23-24, .pure-u-md-24-24, .pure-u-md-3-24, .pure-u-md-3-4, .pure-u-md-3-5, .pure-u-md-3-8, .pure-u-md-4-24, .pure-u-md-4-5, .pure-u-md-5-12, .pure-u-md-5-24, .pure-u-md-5-5, .pure-u-md-5-6, .pure-u-md-5-8, .pure-u-md-6-24, .pure-u-md-7-12, .pure-u-md-7-24, .pure-u-md-7-8, .pure-u-md-8-24, .pure-u-md-9-24 {
+@media screen and (min-width: 48em) {
+  .qm-md-1-12, .qm-md-10-12, .qm-md-11-12, .qm-md-12-12, .qm-md-2-12, .qm-md-3-12, .qm-md-4-12, .qm-md-5-12, .qm-md-6-12, .qm-md-7-12, .qm-md-8-12, .qm-md-9-12 {
     display: inline-block;
     zoom: 1;
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto; }
-  .pure-u-md-1-24 {
-    width: 4.1667%; }
-  .pure-u-md-1-12, .pure-u-md-2-24 {
+  .qm-md-1-12 {
     width: 8.3333%; }
-  .pure-u-md-1-8, .pure-u-md-3-24 {
-    width: 12.5%; }
-  .pure-u-md-1-6, .pure-u-md-4-24 {
+  .qm-md-2-12 {
     width: 16.6667%; }
-  .pure-u-md-1-5 {
-    width: 20%; }
-  .pure-u-md-5-24 {
-    width: 20.8333%; }
-  .pure-u-md-1-4, .pure-u-md-6-24 {
+  .qm-md-3-12 {
     width: 25%; }
-  .pure-u-md-7-24 {
-    width: 29.1667%; }
-  .pure-u-md-1-3, .pure-u-md-8-24 {
+  .qm-md-4-12 {
     width: 33.3333%; }
-  .pure-u-md-3-8, .pure-u-md-9-24 {
-    width: 37.5%; }
-  .pure-u-md-2-5 {
-    width: 40%; }
-  .pure-u-md-10-24, .pure-u-md-5-12 {
+  .qm-md-5-12 {
     width: 41.6667%; }
-  .pure-u-md-11-24 {
-    width: 45.8333%; }
-  .pure-u-md-1-2, .pure-u-md-12-24 {
+  .qm-md-6-12 {
     width: 50%; }
-  .pure-u-md-13-24 {
-    width: 54.1667%; }
-  .pure-u-md-14-24, .pure-u-md-7-12 {
+  .qm-md-7-12 {
     width: 58.3333%; }
-  .pure-u-md-3-5 {
-    width: 60%; }
-  .pure-u-md-15-24, .pure-u-md-5-8 {
-    width: 62.5%; }
-  .pure-u-md-16-24, .pure-u-md-2-3 {
+  .qm-md-8-12 {
     width: 66.6667%; }
-  .pure-u-md-17-24 {
-    width: 70.8333%; }
-  .pure-u-md-18-24, .pure-u-md-3-4 {
+  .qm-md-9-12 {
     width: 75%; }
-  .pure-u-md-19-24 {
-    width: 79.1667%; }
-  .pure-u-md-4-5 {
-    width: 80%; }
-  .pure-u-md-20-24, .pure-u-md-5-6 {
+  .qm-md-10-12 {
     width: 83.3333%; }
-  .pure-u-md-21-24, .pure-u-md-7-8 {
-    width: 87.5%; }
-  .pure-u-md-11-12, .pure-u-md-22-24 {
+  .qm-md-11-12 {
     width: 91.6667%; }
-  .pure-u-md-23-24 {
-    width: 95.8333%; }
-  .pure-u-md-1, .pure-u-md-1-1, .pure-u-md-24-24, .pure-u-md-5-5 {
+  .qm-md-12-12 {
     width: 100%; } }
 
 @media screen and (min-width: 64em) {
-  .pure-u-lg-1, .pure-u-lg-1-1, .pure-u-lg-1-12, .pure-u-lg-1-2, .pure-u-lg-1-24, .pure-u-lg-1-3, .pure-u-lg-1-4, .pure-u-lg-1-5, .pure-u-lg-1-6, .pure-u-lg-1-8, .pure-u-lg-10-24, .pure-u-lg-11-12, .pure-u-lg-11-24, .pure-u-lg-12-24, .pure-u-lg-13-24, .pure-u-lg-14-24, .pure-u-lg-15-24, .pure-u-lg-16-24, .pure-u-lg-17-24, .pure-u-lg-18-24, .pure-u-lg-19-24, .pure-u-lg-2-24, .pure-u-lg-2-3, .pure-u-lg-2-5, .pure-u-lg-20-24, .pure-u-lg-21-24, .pure-u-lg-22-24, .pure-u-lg-23-24, .pure-u-lg-24-24, .pure-u-lg-3-24, .pure-u-lg-3-4, .pure-u-lg-3-5, .pure-u-lg-3-8, .pure-u-lg-4-24, .pure-u-lg-4-5, .pure-u-lg-5-12, .pure-u-lg-5-24, .pure-u-lg-5-5, .pure-u-lg-5-6, .pure-u-lg-5-8, .pure-u-lg-6-24, .pure-u-lg-7-12, .pure-u-lg-7-24, .pure-u-lg-7-8, .pure-u-lg-8-24, .pure-u-lg-9-24 {
+  .qm-lg-1-12, .qm-lg-10-12, .qm-lg-11-12, .qm-lg-12-12, .qm-lg-2-12, .qm-lg-3-12, .qm-lg-4-12, .qm-lg-5-12, .qm-lg-6-12, .qm-lg-7-12, .qm-lg-8-12, .qm-lg-9-12 {
     display: inline-block;
     zoom: 1;
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
     text-rendering: auto; }
-  .pure-u-lg-1-24 {
-    width: 4.1667%; }
-  .pure-u-lg-1-12, .pure-u-lg-2-24 {
+  .qm-lg-1-12 {
     width: 8.3333%; }
-  .pure-u-lg-1-8, .pure-u-lg-3-24 {
-    width: 12.5%; }
-  .pure-u-lg-1-6, .pure-u-lg-4-24 {
+  .qm-lg-2-12 {
     width: 16.6667%; }
-  .pure-u-lg-1-5 {
-    width: 20%; }
-  .pure-u-lg-5-24 {
-    width: 20.8333%; }
-  .pure-u-lg-1-4, .pure-u-lg-6-24 {
+  .qm-lg-3-12 {
     width: 25%; }
-  .pure-u-lg-7-24 {
-    width: 29.1667%; }
-  .pure-u-lg-1-3, .pure-u-lg-8-24 {
+  .qm-lg-4-12 {
     width: 33.3333%; }
-  .pure-u-lg-3-8, .pure-u-lg-9-24 {
-    width: 37.5%; }
-  .pure-u-lg-2-5 {
-    width: 40%; }
-  .pure-u-lg-10-24, .pure-u-lg-5-12 {
+  .qm-lg-5-12 {
     width: 41.6667%; }
-  .pure-u-lg-11-24 {
-    width: 45.8333%; }
-  .pure-u-lg-1-2, .pure-u-lg-12-24 {
+  .qm-lg-6-12 {
     width: 50%; }
-  .pure-u-lg-13-24 {
-    width: 54.1667%; }
-  .pure-u-lg-14-24, .pure-u-lg-7-12 {
+  .qm-lg-7-12 {
     width: 58.3333%; }
-  .pure-u-lg-3-5 {
-    width: 60%; }
-  .pure-u-lg-15-24, .pure-u-lg-5-8 {
-    width: 62.5%; }
-  .pure-u-lg-16-24, .pure-u-lg-2-3 {
+  .qm-lg-8-12 {
     width: 66.6667%; }
-  .pure-u-lg-17-24 {
-    width: 70.8333%; }
-  .pure-u-lg-18-24, .pure-u-lg-3-4 {
+  .qm-lg-9-12 {
     width: 75%; }
-  .pure-u-lg-19-24 {
-    width: 79.1667%; }
-  .pure-u-lg-4-5 {
-    width: 80%; }
-  .pure-u-lg-20-24, .pure-u-lg-5-6 {
+  .qm-lg-10-12 {
     width: 83.3333%; }
-  .pure-u-lg-21-24, .pure-u-lg-7-8 {
-    width: 87.5%; }
-  .pure-u-lg-11-12, .pure-u-lg-22-24 {
+  .qm-lg-11-12 {
     width: 91.6667%; }
-  .pure-u-lg-23-24 {
-    width: 95.8333%; }
-  .pure-u-lg-1, .pure-u-lg-1-1, .pure-u-lg-24-24, .pure-u-lg-5-5 {
+  .qm-lg-12-12 {
     width: 100%; } }
 
 /* pure-menu */
@@ -615,69 +420,24 @@ table {
   background-color: transparent; }
 
 .pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited {
-  color: #000000; }
+  color: #000; }
 
 .pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after {
   font-size: 1em;
   line-height: 1em; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  empty-cells: show;
-  border: 1px solid #cbcbcb; }
-
-table td, table th {
-  border-left: 1px solid #cbcbcb;
-  border-width: 0 0 0 1px;
-  font-size: inherit;
-  margin: 0;
-  overflow: visible;
-  padding: 0.5em 1em; }
-
-table td:first-child, table th:first-child {
-  border-left-width: 0; }
-
-table thead {
-  background-color: #e0e0e0;
-  color: #000;
-  text-align: left;
-  vertical-align: bottom; }
-
-table td {
-  background-color: transparent; }
-
-table tr:nth-child(2n-1) td {
-  background-color: #f2f2f2; }
-
-.pure-g {
-  font: 300 1rem/1.8 'Lato', sans-serif; }
-
-html {
-  font: 300 1rem/1.8 'Lato', sans-serif; }
-
 strong, b {
-  font: 400 1rem/1.8 'Lato', sans-serif;
   color: #222; }
 
 figure {
   margin: 0; }
 
 body {
-  /*font: normal 1em/1.6em Arial, sans-serif;*/
-  font: 300 1rem/1.8 'Lato', sans-serif;
+  font: normal 1em/2em  -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin: 0;
-  color: #000;
+  color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-@media only screen and (min-width: 40em) {
-  body {
-    background: #FFFFFF; } }
-
-@media only screen and (max-width: 39.9375em) {
-  body {
-    background: #FFFFFF; } }
 
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
@@ -704,7 +464,7 @@ html, button, input, select, textarea,
   margin: 0 auto;
   max-width: 75em; }
 
-@media only screen and (min-width: 40.01em) {
+@media only screen and (min-width: 40em) {
   article p {
     margin-left: 10rem;
     margin-right: 10rem; }
@@ -713,9 +473,6 @@ html, button, input, select, textarea,
     margin-right: 0; }
   article h2, article h3, article h4 {
     margin: 1rem 10rem .5rem 10rem; }
-  article img {
-    /*margin-left: -5rem;*/
-    /*margin-right: -5rem;*/ }
   article p {
     text-align: justify; }
   article ul {
@@ -743,7 +500,6 @@ html, button, input, select, textarea,
     padding: 0 .5em; } }
 
 a {
-  font: 300 1rem/1.8 'Lato', sans-serif;
   color: #000;
   text-decoration: none;
   transition-duration: 0.3s; }
@@ -752,26 +508,7 @@ a:hover {
   text-decoration: underline;
   color: #000; }
 
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-pre,
-form,
-p,
-span,
-blockquote,
-th,
-td {
-  font: 300 1rem/1.8 'Lato', sans-serif;
-  color: #000; }
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
   color: inherit;
   text-rendering: optimizeLegibility;
   margin-top: 0;
@@ -798,7 +535,7 @@ h4 {
 h5, h6 {
   font-size: 0.875em; }
 
-.column, .columns {
+.img-pad {
   float: left;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -882,6 +619,9 @@ h5, h6 {
     text-align: center;
     margin: 0 auto; } }
 
+.image-row-lightbox .lightbox-thumb:not(:last-child) amp-img img {
+  margin-right: .75em; }
+
 /* CTA BOX */
 @media screen and (max-width: 40em) {
   .cta-box-wrapper {
@@ -927,8 +667,9 @@ h5, h6 {
   display: inherit; }
 
 .bio-wrap {
-  float: left;
-  display: inline-block; }
+  padding-left: 50px; }
+  .bio-wrap p {
+    margin-bottom: 0; }
 
 hr.team-page {
   max-width: 75rem;
@@ -975,33 +716,37 @@ amp-user-notification.cookie-info .ampstart-btn {
 /* *************** */
 /* Start of Footer */
 /* *************** */
-.menu > li > a {
-  display: block;
-  padding: 0.7rem 1rem;
-  line-height: 1; }
-
-.footer-copyright p {
+.footer-copyright {
+  padding: 0;
   color: #999;
-  font-size: .9rem;
-  display: block;
-  padding: .7rem 1rem;
-  line-height: 1;
-  margin: 0 0 1rem 0; }
+  font-size: .95em;
+  margin-bottom: 1em; }
 
-.footer-links {
-  /*text-align: right;*/
-  float: right; }
+ul.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
 
-.footer-links a {
+ul.footer-links li {
+  display: inline; }
+
+ul.footer-links li a {
   color: #999;
-  font-size: .9rem; }
+  font-size: .95em; }
 
-@media screen and (max-width: 40em) {
-  .closing-line, .closing-line ul li a {
+@media screen and (max-width: 39.9375em) {
+  .footer-copyright {
     text-align: center; }
-  .footer-links {
-    text-align: center;
-    float: none; } }
+  ul.footer-links {
+    text-align: center; }
+  ul.footer-links li:not(:last-child) {
+    margin-right: 1em; } }
+
+@media screen and (min-width: 40em) {
+  ul.footer-links {
+    text-align: right; }
+  ul.footer-links li:not(:last-child) {
+    margin-right: 2em; } }
 
 /* ***************** */
 /* * End of Footer * */
@@ -1038,6 +783,13 @@ div.logo a {
 /* ****************************************************************** */
 .topnav {
   padding: 0.5rem 0.5rem 1.5rem 0.5rem; }
+
+nav#med-nav ul {
+  width: 100%; }
+  nav#med-nav ul .qm-sm-2-12 {
+    text-align: center; }
+  nav#med-nav ul .qm-sm-5-12 {
+    margin-top: 3.5rem; }
 
 nav#med-nav ul.pure-menu-list li > a {
   text-transform: uppercase;
@@ -1282,31 +1034,6 @@ div#hero-img {
 /* ************************** /VISIBILITY *************************** */
 /* ****************************************************************** */
 /* ****************************************************************** */
-/* **************************** CALLOUT ***************************** */
-/* ****************************************************************** */
-blockquote, .callout {
-  position: relative;
-  margin: 0 0 1rem 0;
-  padding: 1em 1em 1em 15%;
-  border: 1px solid rgba(10, 10, 10, 0.25);
-  border-radius: 0;
-  color: #0a0a0a; }
-
-blockquote, .callout.primary {
-  background: white url(/images/002-letter.svg) no-repeat 5% 50%;
-  background-size: 5%;
-  color: #0a0a0a;
-  fill: #aaa; }
-
-.callout.alert {
-  background: #f7e4e1 url(/images/001-exclamation.svg) no-repeat 5% 50%;
-  background-size: 5%;
-  color: #0a0a0a; }
-
-/* ****************************************************************** */
-/* **************************** /CALLOUT **************************** */
-/* ****************************************************************** */
-/* ****************************************************************** */
 /* *************************** NAVIGATION *************************** */
 /* ****************************************************************** */
 #main-menu ul.pure-menu-children a {
@@ -1407,7 +1134,7 @@ ul.burger-icon {
   border-bottom: 1px solid #EAE5E5; }
 
 #sidebar .accordion-dropdown li a {
-  color: #000000; }
+  color: #000; }
 
 .accordion-dropdown section header:after {
   display: inline-block;
@@ -1437,111 +1164,6 @@ ul.burger-icon {
 .hide-svg {
   display: none; }
 
-.share-box-wrapper {
-  margin: 0 0 1em 0; }
-
-.share-box-content {
-  padding: .5em 1em 1em 1em;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13); }
-
-.share-box-heading {
-  font-weight: bold; }
-
-.share-box-button {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-.share-box-button a {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
-  box-shadow: 0 0 1px #777;
-  padding: 5px 12px;
-  margin-right: 1em;
-  font-size: .9em;
-  text-decoration: none; }
-
-.share-box-button a:last-child {
-  margin-right: 0; }
-
-.share-box-button a:hover {
-  text-decoration: none;
-  transition: background-color 200ms linear; }
-
-.share-box svg.icon {
-  height: .8em;
-  padding-right: .5em;
-  width: .8em; }
-
-.share-box-button a.f {
-  color: #3b5998; }
-
-.share-box-button a.f:hover {
-  color: #fff;
-  background-color: #3b5998; }
-
-.share-box-button a.f svg.icon {
-  fill: #3b5998; }
-
-.share-box-button a:hover.f svg.icon {
-  fill: #fff; }
-
-.share-box-button a.t {
-  color: #4099ff; }
-
-.share-box-button a.t:hover {
-  color: #fff;
-  background-color: #4099ff; }
-
-.share-box-button a.t svg.icon {
-  fill: #4099ff; }
-
-.share-box-button a:hover.t svg.icon {
-  fill: #fff; }
-
-.share-box-button a.l {
-  color: #0077b5; }
-
-.share-box-button a.l:hover {
-  color: #fff;
-  background-color: #0077b5; }
-
-.share-box-button a.l svg.icon {
-  fill: #0077b5; }
-
-.share-box-button a:hover.l svg.icon {
-  fill: #fff; }
-
-.share-box-button a.x {
-  color: #006567; }
-
-.share-box-button a.x:hover {
-  color: #fff;
-  background-color: #b0d400; }
-
-.share-box-button a.x svg.icon {
-  fill: #006567; }
-
-.share-box-button a:hover.x svg.icon {
-  fill: #fff; }
-
-.share-box-button a.e {
-  color: #444; }
-
-.share-box-button a.e:hover {
-  color: #fff;
-  background-color: #444; }
-
-.share-box-button a.e svg.icon {
-  fill: #444; }
-
-.share-box-button a:hover.e svg.icon {
-  fill: #fff; }
-
 .ampTabContainer {
   display: -ms-flexbox;
   display: flex;
@@ -1553,11 +1175,26 @@ amp-selector [option][selected] {
   outline: unset; }
 
 /* ****************************************************************** */
-/* ********************** xxxRENTE24.de CUSTOM ********************** */
+/* ************************** /UTILITY *************************** */
 /* ****************************************************************** */
-/* ****************************************************************** */
-/* ********************* /xxxRENTE24.de CUSTOM ********************** */
-/* ****************************************************************** */
+.tar {
+  text-align: right; }
+
+.tal {
+  text-align: left; }
+
+.tac {
+  text-align: center; }
+
+hr.separator {
+  max-width: 75rem;
+  height: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #cacaca;
+  border-left: 0;
+  margin: 1.25rem auto;
+  clear: both; }
 
   </style>
 
@@ -1569,58 +1206,59 @@ amp-selector [option][selected] {
 
 <body>
 <amp-sidebar id="sidebar" side="right" layout="nodisplay">
-        <div role="button" class="button" on="tap:sidebar.toggle" tabindex="0">✕</div>
-        <ul id="mobileMenu">
+    <div role="button" class="button" on="tap:sidebar.toggle" tabindex="0">✕</div>
+    <ul id="mobileMenu">
+        
             
-                
-                    <li class="menu-item"><a href="/gh-r24/">Home</a></li>
-                
+                <li class="menu-item"><a href="/gh-r24/">Home</a></li>
             
-                
-                    <li class="menu-item">
-                        <amp-accordion layout="container" disable-session-states="" class="accordion-dropdown">
-                            <section>
-                                <header>Leistungen</header>
-                                <ul>
-                                    
-                                    <li><a href="/gh-r24/architekturfotografie/" class="text-decoration-none">Architekturfotografie</a></li>
-                                    
-                                    <li><a href="/gh-r24/businessfotografie/" class="text-decoration-none">Businessfotografie</a></li>
-                                    
-                                    <li><a href="/gh-r24/fashion-fotografie/" class="text-decoration-none">Fashion Fotografie</a></li>
-                                    
-                                    <li><a href="/gh-r24/food-fotografie/" class="text-decoration-none">Food Fotografie</a></li>
-                                    
-                                    <li><a href="/gh-r24/hochzeitsfotografie/" class="text-decoration-none">Hochzeitsfotografie</a></li>
-                                    
-                                    <li><a href="/gh-r24/portraitfotografie/" class="text-decoration-none">Portraitfotografie</a></li>
-                                    
-                                    <li><a href="/gh-r24/restaurantfotografie/" class="text-decoration-none">Restaurantfotografie</a></li>
-                                    
-                                </ul>
-                            </section>
-                        </amp-accordion>
-                    </li>
-                
+        
             
-                
-                    <li class="menu-item"><a href="/gh-r24/team/">Team</a></li>
-                
+                <li class="menu-item">
+                    <amp-accordion layout="container" disable-session-states="" class="accordion-dropdown">
+                        <section>
+                            <header>Leistungen</header>
+                            <ul>
+                                
+                                <li><a href="/gh-r24/architekturfotografie/" class="text-decoration-none">Architekturfotografie</a></li>
+                                
+                                <li><a href="/gh-r24/businessfotografie/" class="text-decoration-none">Businessfotografie</a></li>
+                                
+                                <li><a href="/gh-r24/fashion-fotografie/" class="text-decoration-none">Fashion Fotografie</a></li>
+                                
+                                <li><a href="/gh-r24/food-fotografie/" class="text-decoration-none">Food Fotografie</a></li>
+                                
+                                <li><a href="/gh-r24/hochzeitsfotografie/" class="text-decoration-none">Hochzeitsfotografie</a></li>
+                                
+                                <li><a href="/gh-r24/portraitfotografie/" class="text-decoration-none">Portraitfotografie</a></li>
+                                
+                                <li><a href="/gh-r24/restaurantfotografie/" class="text-decoration-none">Restaurantfotografie</a></li>
+                                
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                </li>
             
-                
-                    <li class="menu-item"><a href="/gh-r24/kontakt/">Kontakt</a></li>
-                
+        
             
-        </ul>
-    </amp-sidebar>
+                <li class="menu-item"><a href="/gh-r24/team/">Team</a></li>
+            
+        
+            
+                <li class="menu-item"><a href="/gh-r24/kontakt/">Kontakt</a></li>
+            
+        
+    </ul>
+</amp-sidebar>
 
 <header class="siteheader">
 
     <div class="topnav">
         <nav id="med-nav" class="main-menu-bar show-for-medium">
-            <div class="max75">
+            <div class="max75 pure-g">
                 <ul class="pure-menu-list pure-menu pure-menu-horizontal">
                     <!-- Top Navigation LH side -->
+                    <div class="qm-sm-5-12 tar">
                     
                         
                             
@@ -1670,14 +1308,18 @@ amp-selector [option][selected] {
                             </li>
                             
                         
+                    </div>
 
+                        <div class="qm-sm-2-12">
                         <!-- Logo Top Navigation -->
                             <li class="pure-menu-item pure-menu-selected">
                                 <div class="logo">
                                     <a class="pure-menu-link" title="zurück zur Startseite" href="/gh-r24/"></a>
                                 </div>
                             </li>
+                        </div>
 
+                        <div class="qm-sm-5-12 tal">
                         <!-- Top Navigation RH side -->
                         
                         
@@ -1697,13 +1339,14 @@ amp-selector [option][selected] {
                             </li>
                             
                         
+                    </div>
                 </ul>
             </div>
         </nav>
 
         <nav id="small-nav" class="show-for-small-only">
             <div class="pure-g">
-                <div class="pure-u-1 logo-wrapper">
+                <div class="qm-sm-12-12 logo-wrapper">
                     <a title="zurück zur Startseite" href="/gh-r24/">
                         <amp-img src=/gh-r24/images/fotograf-muenchen.gif alt="Fotograf München" width="97" height="143" noloading></amp-img>
                     </a>
@@ -1735,23 +1378,19 @@ amp-selector [option][selected] {
 
 <div class="wrapper">
     <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-24-24 pure-u-sm-24-24 content-wrapper">
+        <div class="qm-sm-12-12 content-wrapper">
 
             <!---->
 
 <nav role="menubar" aria-label="breadcrumbs" class="margin10">
     <ul class="breadcrumbs">
-        <!-- <li>Sie sind hier:</li> -->
         <li role="menuitem" typeof="v:Breadcrumb">
             <a href="/gh-r24/" rel="v:url" property="v:title">Home</a>
         </li>
 
         <li role="menuitem" typeof="v:Breadcrumb">
-            <a class="current-path" href="/portraitfotografie/" rel="v:url" property="v:title">portraitfotografie</a>
+            <h1><a class="current-path" href="/portraitfotografie/" rel="v:url" property="v:title">portraitfotografie</a></h1>
         </li>
-
-
-        <!-- <li><h1 itemprop="headline">Portraitfotografie München</h1></li> -->
     </ul>
 </nav><!-- /Breadcrumbs -->
 
@@ -1771,31 +1410,40 @@ amp-selector [option][selected] {
 
 <p>Wir nehmen uns Zeit, denn als Portraitfotograf München haben wir hohe Ansprüche: Die Essenz Ihrer Persönlichkeit in einem Bild herauszuarbeiten – das erfordert Einblick in Ihr Wesen und eben auch Zeit. „Ein Bild sagt mehr als tausend Worte“ – Bilder können sehr viel über Menschen aussagen, dabei ist aber immer Natürlichkeit wichtig. Das gilt sowohl für Ihr Styling und Ihr Make-up (für das wir eine professionelle Visagistin engagieren), als eben auch für die Bildbearbeitung.</p>
 
-<div class="image-row-lightbox">
 <hr />
-<div class="pure-g">
-<div class="pure-u-1 pure-u-md-24-24 pure-u-sm-24-24">
-<amp-image-lightbox id="lightbox1" layout="nodisplay">
-<div on="tap:gallery-lightbox.close" role="button" tabindex="0">
-<button class="ampstart-btn caps m2 close-gallery-button lightbox-button" on="tap:gallery-lightbox.close" role="button" tabindex="0">Close</button>
+
+<div class="image-row-lightbox hide-for-small-only">
+    <div class="pure-g">
+        <amp-image-lightbox id="lightbox1" layout="nodisplay">
+        <div on="tap:gallery-lightbox.close" role="button" tabindex="0">
+            <button class="ampstart-btn caps m2 close-gallery-button lightbox-button" on="tap:gallery-lightbox.close" role="button" tabindex="0">Close</button>
+        </div>
+        </amp-image-lightbox>
+        <div class="qm-md-3-12 qm-sm-12-12 lightbox-thumb">
+            <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_004-1200x800.jpg" width="270" height="180" layout="responsive" alt="Portrait Fotograf Fotografie München"></amp-img>
+        </div>
+        <div class="qm-md-3-12 qm-sm-12-12 lightbox-thumb">
+            <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_007-1200x800.jpg" width="270" height="180" layout="responsive" alt="Portrait Fotograf Fotografie München"></amp-img>
+        </div>
+        <div class="qm-md-3-12 qm-sm-12-12 lightbox-thumb">
+            <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_009-1200x800.jpg" width="270" height="180" layout="responsive" alt="Portrait Fotograf Fotografie München"></amp-img>
+        </div>
+        <div class="qm-md-3-12 qm-sm-12-12 lightbox-thumb">
+            <amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_022-1202x800.jpg" width="270" height="180" layout="responsive" alt="Portrait Fotograf Fotografie München"></amp-img>
+        </div>
+    </div>
 </div>
-</amp-image-lightbox>
-<figure class="pure-u-md-6-24 pure-u-sm-24-24 columns">
-<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_004-1200x800.jpg" width="270" height="180" layout="responsive" alt="Portrait Fotograf Fotografie München"></amp-img>
-</figure>
-<figure class="pure-u-md-6-24 pure-u-sm-24-24 columns">
-<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_007-1200x800.jpg" width="270" height="180" layout="responsive" alt="Portrait Fotograf Fotografie München"></amp-img>
-</figure>
-<figure class="pure-u-md-6-24 pure-u-sm-24-24 columns">
-<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_009-1200x800.jpg" width="270" height="180" layout="responsive" alt="Portrait Fotograf Fotografie München"></amp-img>
-</figure>
-<figure class="pure-u-md-6-24 pure-u-sm-24-24 columns">
-<amp-img on="tap:lightbox1" role="button" tabindex="0" src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_022-1202x800.jpg" width="270" height="180" layout="responsive" alt="Portrait Fotograf Fotografie München"></amp-img>
-</figure>
+<!--  AMP-CAROUSEL -->
+<div class="image-carousel show-for-small-only">
+            <amp-carousel width="270" height="180" layout="responsive" type="slides" autoplay="" controls="" loop="" delay="3000">
+              <amp-img src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_004-1200x800.jpg" width="270" height="180" layout="responsive" alt="a sample image"></amp-img>
+              <amp-img src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_007-1200x800.jpg" width="270" height="180" layout="responsive" alt="another sample image"></amp-img>
+              <amp-img src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_009-1200x800.jpg" width="270" height="180" layout="responsive" alt="and another sample image"></amp-img>
+              <amp-img src="/gh-r24/images/Portrait-Fotograf-Muenchen-089_022-1202x800.jpg" width="270" height="180" layout="responsive" alt="and another sample image"></amp-img>
+            </amp-carousel>
 </div>
-</div>
+
 <hr />
-</div>
 
 <p>Durch kreative Techniken eröffnet sich ein großer Spielraum, um Sie in diesem einen, besonderen Moment auf einem Bild festzuhalten. Dabei transportieren wir als <strong>Portraitfotograf München</strong> Botschaften: Das kann ein bestimmtes Image sein, aber eben auch eine besondere Stärke, eine Neigung oder ein Wesenszug, der typisch für Sie ist. Wir gehen auf Sie und den Verwendungszweck der Fotos ein: Wir setzten in einem Portrait, das in einer Unternehmensbroschüre veröffentlicht werden soll, andere Maßstäbe als bei privaten Aufnahmen. Selbst die Unternehmensausrichtung spielt eine Rolle – wir haben also im Vorfeld vieles zu besprechen.</p>
 
@@ -1812,30 +1460,30 @@ amp-selector [option][selected] {
 </div>
 
 <footer class="wrapper">
-    <div class="row closing-line pure-g">
-        <div class="pure-u-md-8-24 pure-u-sm-24-24 columns footer-copyright">
-            <p>&copy;2018 qmedia GmbH</p>
+    <div class="pure-g footer-copyright">
+        <div class="qm-md-4-12 qm-sm-12-12">
+            &copy;2018 qmedia GmbH
         </div>
-        <div class="pure-u-md-16-24 pure-u-sm-24-24 small-24 columns">
-            <div class="footer-links pure-menu pure-menu-horizontal">
-                <ul id="menu-footer-menu" class="pure-menu-list menu">
-                    <li id="menu-item-21" class="pure-menu-item menu-item menu-item-21">
-                        <a class="pure-menu-link" href="https://www.089-fotograf.de/kontakt/">Kontakt</a>
+        <div class="qm-md-8-12 qm-sm-12-12">
+            <div>
+                <ul class="footer-links">
+                    <li>
+                        <a href="/kontakt/">Kontakt</a>
                     </li>
-                    <li id="menu-item-22" class="pure-menu-item menu-item menu-item-22">
-                        <a class="pure-menu-link" href="https://www.089-fotograf.de/impressum/">Impressum</a>
+                    <li>
+                        <a href="/impressum/">Impressum</a>
                     </li>
-                    <li id="menu-item-62" class="pure-menu-item menu-item menu-item-62">
-                        <a class="pure-menu-link" href="https://www.089-fotograf.de/datenschutz/">Datenschutzerklärung</a>
+                    <li>
+                        <a href="/datenschutz/">Datenschutzerklärung</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <amp-user-notification id="my-notification" layout="nodisplay">
-        <div>Um Ihre Erfahrung auf unserer Website zu verbessern, verwenden wir Cookies. Wenn Sie mit der Verwendung von Cookies einverstanden sind, klicke Sie auf Akzeptieren.<button on="tap:my-notification.dismiss" class="ampstart-btn caps ml1">Akzeptieren</button></div>
-    </amp-user-notification>
+    <!--<amp-user-notification id="my-notification" layout="nodisplay">-->
+        <!--<div>Um Ihre Erfahrung auf unserer Website zu verbessern, verwenden wir Cookies. Wenn Sie mit der Verwendung von Cookies einverstanden sind, klicke Sie auf Akzeptieren.<button on="tap:my-notification.dismiss" class="ampstart-btn caps ml1">Akzeptieren</button></div>-->
+    <!--</amp-user-notification>-->
 
 </footer>
 

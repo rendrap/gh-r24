@@ -4,7 +4,7 @@ desc 'Test website AMP validation'
 task :amp do
   puts 'Running AMP Validator...'.yellow.bold
   # basedir = '.'
-  files = Dir.glob("**/*.html")
+  files = Dir.glob("_site/**/*.html")
     files.each do |file|
       system("amphtml-validator #{file}")
     end
